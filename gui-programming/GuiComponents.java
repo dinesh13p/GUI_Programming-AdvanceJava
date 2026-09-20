@@ -1,8 +1,10 @@
 import javax.swing.JButton;
+import javax.swing.ButtonGroup;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPasswordField;
+import javax.swing.JRadioButton;
 import javax.swing.JSlider;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -40,9 +42,22 @@ public class GuiComponents {
         thirdButton.setBounds(100, 400, 150, 80);
         jFrame.add(thirdButton);
 
+        // Radio Button
+        JRadioButton male = new JRadioButton("Male");
+        male.setBounds(100, 560, 100, 50);
+
+        JRadioButton female = new JRadioButton("Female");
+        female.setBounds(100, 600, 100, 50);
+
+        ButtonGroup genderGroup = new ButtonGroup();
+        genderGroup.add(male);
+        genderGroup.add(female);
+        jFrame.add(male);
+        jFrame.add(female);
+
         // 5. Create Checkbox
         JLabel checkBoxJLabel = new JLabel("Hobbies:");
-        checkBoxJLabel.setBounds(400, 300, 150, 80);
+        checkBoxJLabel.setBounds(400, 370, 150, 80);
         JCheckBox cricket = new JCheckBox("Cricket");
         cricket.setBounds(400, 400, 150, 80);
         JCheckBox volleyball = new JCheckBox("volleyball");
@@ -86,12 +101,12 @@ public class GuiComponents {
 
         // // JSlider
 
-        // // JSlider slider = new JSlider(0, 100, 50);
-        // // slider.setMajorTickSpacing(25);
-        // // slider.setPaintTicks(true);
-        // // slider.setPaintLabels(true);
-        // // slider.setBounds(300, 450, 250, 60);
-        // // jFrame.add(slider);
+        JSlider slider = new JSlider(0, 100, 50);
+        slider.setMajorTickSpacing(25);
+        slider.setPaintTicks(true);
+        slider.setPaintLabels(true);
+        slider.setBounds(300, 600, 250, 60);
+        jFrame.add(slider);
 
         // Set Visibility
         jFrame.setVisible(true);
