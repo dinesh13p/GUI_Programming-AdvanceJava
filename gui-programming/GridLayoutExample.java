@@ -20,13 +20,3 @@ public class GridLayoutExample {
         frame.setVisible(true);
     }
 }
-
-
-/*
-Events:                         Listeners:
-ActionEvent                     ActionListener (buttons)
-ItemEvent                       ItemListener (list items)
-WindowEvent                     WindowListener (window)
-KeyEvent                        KeyListener (keyboard)
-MouseEvent                      MouseListener (mouse)
-*/
