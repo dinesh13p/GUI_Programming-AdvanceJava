@@ -17,7 +17,7 @@ public class ActionEventExample{
         JButton button = new JButton("Click Me");
         frame.add(button);
 
-        // addd event handling in button component
+        // add event handling in button component
         button.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
                 System.out.println("Button Clicked");
