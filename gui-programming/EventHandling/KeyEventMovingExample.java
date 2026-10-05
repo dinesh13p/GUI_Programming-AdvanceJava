@@ -36,8 +36,30 @@ public class KeyEventMovingExample {
 
                 label.setLocation(x, y);
             }
+
+            public void keyTyped(KeyEvent e) {
+
+            }
+
+            public void keyReleased(KeyEvent e) {
+
+            }
         });
 
         frame.setVisible(true);
     }
 }
+
+
+/*
+ASSIGNMENT:
+
+Principle (text field)
+Time (text field)
+Rate (text field)
+
+Mouse press: Simple Interest (button)
+Mouse Release: Compound Interest (Button)
+
+Using Adapter Class
+ */
